@@ -1,5 +1,5 @@
 const score = JSON.parse(localStorage.getItem('Score')) || { win: 0, lost: 0, tie: 0 };
-const click = new Audio('click.wav');
+const click = new Audio('Assets/click.wav');
 const elements = {
   userMove: document.getElementById('user-move'),
   computerMove: document.getElementById('computer-move'),
@@ -49,8 +49,8 @@ function playGame(userMove) {
   console.log(computerMove)
   console.log(result)
 
-  elements.userMove.src = userMove;
-  elements.computerMove.src = computerMove;
+  elements.userMove.src = `Assets/${userMove}`;
+  elements.computerMove.src = `Assets/${computerMove}`;
   elements.result.innerText = result;
   elements.result.classList.remove('pop'); // Remove class to reset animation
   void elements.result.offsetWidth; // Force reflow to restart animation

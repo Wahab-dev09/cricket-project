@@ -41,6 +41,7 @@ main {
     justify-content: space-between;
 }
 .Heading-button>button{
+    cursor: pointer;
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid transparent;
     border-radius: 10px;
@@ -147,7 +148,7 @@ h2{
     cursor: pointer;
     transition: all 0.1s ease 0s;
 }
-.user-buttons>button:active{
+.user-buttons>button:active,.Heading-button>button:active{
 transform: scale(0.9);
 }
 .user-buttons>button:first-child{    background-color: rgba(255, 241, 160, 0.342);}
