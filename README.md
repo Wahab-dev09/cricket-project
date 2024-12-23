@@ -1,7 +1,7 @@
 # Cricket Game
 
 <p align="left">
- <img src="https://github.com/user-attachments/assets/calculator-image.png" alt="Calculator Image" width="50%" />
+ <img src="https://github.com/user-attachments/assets/d8b06e4c-34b9-4189-8416-5f15e3304a0f" alt="Cricket Image" width="40%" />
 </p>
 
 ## Overview
