@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+html {font-size: 15px;}
+body {
+    overflow: hidden;
+}
+main {
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: linear-gradient(to bottom, #0e5f22, #3f8142);
+    position: relative;
+}
+.frame{
+    width: 90%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 800px;
+}
+.game-detail{
+    padding-top: 15px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.Heading-button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.Heading-button>button{
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 2px 15px;
+    color: white;
+}
+h1{
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: -1px;
+    text-align: center;
+}
+h2{
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#score{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#score>span{
+    color: white;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+#score>span:nth-child(2){  border-left: 1px solid rgba(255, 255, 255, 0.3); border-right: 1px solid rgb(255, 255, 255, 0.3);}
+.game{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    height: 70%;
+    padding: 20px 0px;
+}
+#result{
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+    color: white;
+    top: 10%;
+
+}
+.user,.computer{
+    width: 50%;
+    height: 50%;
+    max-height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.user>span,.computer>span{
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.circle{
+    width: clamp(6.25rem, 1.6346rem + 23.0769vw, 8.125rem);
+    height: clamp(6.25rem, 1.6346rem + 23.0769vw, 8.125rem);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.circle>img{
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+.matchup{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.user-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+    gap: 10px;
+}
+.user-buttons>button{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.1s ease 0s;
+}
+.user-buttons>button:active{
+transform: scale(0.9);
+}
+.user-buttons>button:first-child{    background-color: rgba(255, 241, 160, 0.342);}
+.user-buttons>button:nth-child(2){    background-color: rgba(255, 160, 160, 0.342);}
+.user-buttons>button:last-child{    background-color: rgba(253, 253, 253, 0.342);}
+.user-buttons>button:first-child:hover{    background-color: rgba(255, 241, 160, 0.5);}
+.user-buttons>button:nth-child(2):hover{    background-color: rgba(255, 160, 160, 0.5);}
+.user-buttons>button:last-child:hover{    background-color: rgba(253, 253, 253, 0.5);}
+.user-buttons>button>img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+.pop{
+    animation: pop 0.5s ease 0s;
+}
+
+@keyframes pop {0%{ opacity: 0;transform: scale(0);}50%{opacity: 0.5;transform: scale(1.25);}100%{opacity: 1;transform: scale(1);}}
+@media screen and (min-height:700px) {
+    .user>span,.computer>span{font-size: 1.2rem; }
+}
+@media screen and (min-height:750px) {
+ h1{font-size: 3rem;}   
+}
+@media screen and (min-height:850px) {
+    .game-detail{ padding-top: 0px;  height: 25%; }
+    .game{ height: 75%;}
+}
