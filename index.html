@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Cricket Game</title>
+</head>
+<body>
+  <main>
+    <div class="frame">
+      <div class="game-detail">
+        <h1>Cricket Game</h1>
+        <div class="Heading-button">
+          <h2>Scoring</h2>
+          <button onclick="resetGame()">Reset</button>
+        </div>
+        <div id="score">
+          <span id="win"></span>
+          <span id="lose"></span>
+          <span id="tie"></span>
+        </div>
+      </div>
+      <div class="game">
+        <div id="result"></div>
+      <div class="matchup">
+        <div class="user"><div class="circle"><img id="user-move" src="question mark.png" alt=""></div><span>User</span></div>
+        <div class="computer"><div class="circle"><img id="computer-move" src="question mark.png" alt=""></div><span>Computer</span></div>
+      </div>
+
+        <div class="user-buttons">
+          <button onclick="playGame('bat.png')"><img src="bat.png" alt=""></button>
+          <button onclick="playGame('ball.png')"><img src="ball.png" alt=""></button>
+          <button onclick="playGame('stump.png')"><img src="stump.png" alt=""></button>
+        </div>
+      </div>
+    </div>
+    </main>
+  <script src="script.js"></script>
+</body>
+</html>
