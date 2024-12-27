@@ -16,7 +16,7 @@ A simple interactive game where the user competes against the computer. Players 
     - Scoring Section: Displays the win, lose, and tie counts.
     - Game Area: Shows the user's and computer's moves and the result.
     - User Input Buttons: Allow users to select their move.
-    - Reset Button: Resets the scores and clears the game state.
+    - Reset Button: Resets the scores and clears the game state
 
 ---
 
